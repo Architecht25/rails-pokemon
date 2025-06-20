@@ -1,0 +1,15 @@
+.pokemon-card {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: space-between;
+  background-color: #7AA2C1;
+  border: 10px solid #f7D16A;
+  border-radius: 0.5rem;
+  color: #000;
+  padding: 1rem;
+}
+
+.pokemon-card > h2 {
+  color: $white;
+}
