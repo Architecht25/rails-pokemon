@@ -1,0 +1,7 @@
+<header class="header">
+  <%= link_to "< Pokédex", root_path %>
+</header>
+
+<h1>Show me <%= @pokemon.name %></h1>
+<%= @pokemon.element_type%>
+<%= cl_image_tag @pokemon.photo.key %>

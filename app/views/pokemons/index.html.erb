@@ -8,8 +8,8 @@ search bar for pokemon
 <div class="grid">
   <% @pokemons.each do |pokemon| %>
     <div class="pokemon-card">
-      <%= cl_image_tag pokemon.photo.key, width: 100, crop: :fill, gravity: :auto  %>
-      <strong><%= pokemon.name.capitalize %></strong>
+      <%= cl_image_tag pokemon.photo.key %>
+      <h2><%= link_to pokemon.name.capitalize, pokemon_path(pokemon) %></h2>
       (<%= pokemon.element_type.capitalize %>)
     </div>
   <% end %>
