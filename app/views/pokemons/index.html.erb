@@ -1,0 +1,12 @@
+<h1>Liste des Pokémons</h1>
+
+link for trainers
+link for random pokemon
+search bar for pokemon
+
+
+<% @pokemons.each do |pokemon| %>
+    <%= cl_image_tag pokemon.photo.key, width: 300, crop: :fill, gravity: :auto  %>
+    <strong><%= pokemon.name.capitalize %></strong>
+    (<%= pokemon.element_type.capitalize %>)
+<% end %>
